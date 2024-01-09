@@ -218,6 +218,7 @@ void AccountListPage::on_actionAddMicrosoft_triggered()
 
 void AccountListPage::on_actionAddOffline_triggered()
 {
+    /* Just let us create an offline account! we're broke anyways ;)
     if (!m_accounts->drmCheck()) {
         QMessageBox::warning(
             this,
@@ -230,6 +231,7 @@ void AccountListPage::on_actionAddOffline_triggered()
         );
         return;
     }
+    */
 
     MinecraftAccountPtr account = OfflineLoginDialog::newAccount(
         this,
